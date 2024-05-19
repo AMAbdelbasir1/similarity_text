@@ -3,6 +3,7 @@ import tensorflow_hub as hub
 import tensorflow_text  # Required for using Universal Sentence Encoder
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+import os
 
 app = Flask(__name__)
 
@@ -56,4 +57,5 @@ def check_similarity():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
