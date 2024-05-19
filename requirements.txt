@@ -2,4 +2,4 @@ flask
 tensorflow
 tensorflow_hub
 numpy
-sklearn
+scikit-learn
