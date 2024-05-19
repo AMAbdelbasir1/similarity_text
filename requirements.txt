@@ -3,3 +3,4 @@ tensorflow
 tensorflow_hub
 numpy
 scikit-learn
+tensorflow_text
